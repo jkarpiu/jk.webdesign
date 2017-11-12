@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #D5DFE5;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: #D5DFE5;
+}
+
+header {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #567568;
+  height: 93vh;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header #logo {
+  height: 3em;
+  padding: 12px;
+}
+
+@media screen and (orientation: portrait) {
+  header #header {
+    position: absolute;
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30vh;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  header #header {
+    position: absolute;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 17vh;
+  }
+}
+
+header i,
+header a {
+  color: #D5DFE5;
+}
+
+nav {
+  position: absolute;
+  padding-top: 18px;
+  padding-right: 4%;
+  right: 0px;
+  top: 0px;
+  font-size: 2rem;
+}
+
+i:hover {
+  color: #C9B1BD;
+  cursor: pointer;
+}
+
+#arrow {
+  position: absolute;
+  bottom: 4%;
+  left: 49%;
+  padding: 3px;
+  border: solid 3px #D5DFE5;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: scale(1, 1);
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
+}
+
+#arrow:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
+  color: #C9B1BD;
+}
+
+@media (min-width: 2000px) {
+  #arrow {
+    display: none;
+  }
+}
